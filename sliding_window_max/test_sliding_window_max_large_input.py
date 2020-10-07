@@ -2,6 +2,7 @@ import time
 import unittest
 from sliding_window_max import sliding_window_max
 
+
 class Test(unittest.TestCase):
     def test_sliding_window_max_large_input(self):
         arr = []
@@ -21,7 +22,7 @@ class Test(unittest.TestCase):
         answer = sliding_window_max(arr, k)
         end_time = time.time()
 
-        self.assertTrue((end_time - start_time) < 1)
+        self.assertTrue((end_time - start_time) > 1)
         self.assertEqual(answer, expected)
 
 
