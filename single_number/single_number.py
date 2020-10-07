@@ -22,7 +22,7 @@ then we can loop through the array:
     as we're looping through
     [1,1,2,2,3,3,4,5,5]
 
-    we get this..
+    we get something like this..
     { 1: 2, 2:2 , 3: 2, 4: 1, 5: 2}
     we then loop over the hashtable
     and return the key of the item that has a value of 1
