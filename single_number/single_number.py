@@ -29,22 +29,25 @@ then we can loop through the array:
 
 
 '''
+# Can't think of a way to make this more optimized. It currently runs with an O(n) time complexity
 
 
 def single_number(arr):
     # arr.sort()
     tracker = {}
 
-    for i in range(len(arr)):
+    for i in range(len(arr)):  # O(n)
         if arr[i] in tracker:
             tracker[arr[i]] += 1
 
         else:
             tracker[arr[i]] = 1
 
-    for item in tracker:
+    for item in tracker:  # O(n)
         if tracker[item] == 1:
             return item
+
+# O(n) + O(n) = O(2n) = O(n)
 
 
 if __name__ == '__main__':

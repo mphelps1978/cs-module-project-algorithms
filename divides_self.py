@@ -28,10 +28,13 @@ return a Boolean based on the result
 # Loop through them and see if they devide evenly (% = 0)
 
 
-def divides_itself(number):
+def divides_self(n):
+    digits = list(str(n))
 
-    digits = list(str(number))
+    for d in digits:
+        if d == '0' or n % int(d) != 0:
+            return False
+    return True
 
-    # 0 Case
-    if number is 0:
-        return False
+
+print(divides_self(244))
